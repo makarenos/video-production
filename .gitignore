@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+video_env/
+venv/
+ENV/
+env/
+*.egg-info/
+
+# Node.js / Remotion
+node_modules/
+npm-debug.log*
+remotion/node_modules/
+remotion/dist/
+
+# РЕНДЕРЫ - НЕ КОММИТИМ (файлы большие!)
+renders/
+output/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# АУДИО - НЕ КОММИТИМ
+assets/audio/*.mp3
+assets/audio/*.wav
+assets/audio/*.m4a
+
+# Временные файлы
+*.tmp
+.DS_Store
+*.swp
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Manim cache
+media/
+
+# Исключения - папки коммитим, но пустые
+!renders/.gitkeep
+!output/.gitkeep
+!assets/audio/.gitkeep

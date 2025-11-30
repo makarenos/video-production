@@ -1,0 +1,23 @@
+project:
+  name: "Test Video"
+  resolution: [1920, 1080]
+  fps: 30
+  duration: 60  # секунды для теста
+
+style:
+  background: "#1a1a1a"
+  primary_color: "#ffffff"
+  accent_color: "#0096ff"
+  font: "Arial"
+
+render:
+  preset: "ultrafast"  # для быстрых тестов
+  threads: 4
+  codec: "libx264"
+  quality: "medium"
+
+paths:
+  manim_output: "renders/manim"
+  remotion_output: "renders/remotion"
+  final_output: "output"
+  assets: "assets"
