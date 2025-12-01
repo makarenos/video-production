@@ -1,8 +1,8 @@
 project:
-  name: "Test Video"
+  name: "My First Video"
   resolution: [1920, 1080]
   fps: 30
-  duration: 60  # секунды для теста
+  duration: 300  # секунды
 
 style:
   background: "#1a1a1a"
@@ -11,13 +11,16 @@ style:
   font: "Arial"
 
 render:
-  preset: "ultrafast"  # для быстрых тестов
-  threads: 4
+  preset: "medium"  # ultrafast, fast, medium, slow, veryslow
+  threads: 8
   codec: "libx264"
-  quality: "medium"
+  crf: 23  # 18-28, меньше = выше качество
+
+audio:
+  bitrate: "192k"
+  codec: "aac"
 
 paths:
   manim_output: "renders/manim"
   remotion_output: "renders/remotion"
   final_output: "output"
-  assets: "assets"
